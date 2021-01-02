@@ -53,10 +53,10 @@ const Jobs = () => {
           {jobs.map((job) => {
             if (job.company === company) {
               return (
-                <article className="job-info">
+                <article kye={job.id} className="job-info">
                   <h3>{job.position}</h3>
                   <h4>{job.company}</h4>
-                  <p className="job-date">{date}</p>
+                  <p className="job-date">{job.date}</p>
                   {job.desc.map((item) => {
                     return (
                       <div key={item.id} className="job-desc">
