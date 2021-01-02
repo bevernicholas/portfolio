@@ -1,6 +1,7 @@
-import React from "react"
-import Title from "./Title"
-import services from "../constants/services"
+import React from "react";
+import Title from "./Title";
+import { FaAngleDoubleRight } from "react-icons/fa";
+import services from "../constants/services";
 const Services = () => {
   return (
     <section className="section bg-grey">
@@ -13,7 +14,17 @@ const Services = () => {
             {icon}
             <h4>{title}</h4>
             <div className="underline"></div>
-            <p>{text}</p>
+            <div>
+              {text.map((item, index) => {
+                return (
+                  <div key={index} className='services-desc'>
+                    <FaAngleDoubleRight className='services-icon'></FaAngleDoubleRight>
+                    <p>{item}</p>
+                  </div>
+                )
+              })}
+            </div>
+            {/* <p>{text}</p> */}
           </article>
           )
         })}
