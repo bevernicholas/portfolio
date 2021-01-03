@@ -12,17 +12,17 @@ const data = [
   {
     id: 1,
     icon: <FaGithubSquare className="social-icon"></FaGithubSquare>,
-    url: "https://www.twitter.com",
+    url: "https://github.com/bevernicholas",
   },
   {
     id: 2,
     icon: <FaLinkedin className="social-icon"></FaLinkedin>,
-    url: "https://www.twitter.com",
+    url: "https://www.linkedin.com/in/nick-bever-8281b6139/",
   },
   {
     id: 3,
     icon: <FaTwitterSquare className="social-icon"></FaTwitterSquare>,
-    url: "https://www.twitter.com",
+    url: "https://twitter.com/NicholasBever",
   }
 ]
 const links = data.map(link => {
